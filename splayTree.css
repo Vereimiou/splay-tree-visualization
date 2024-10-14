@@ -1,0 +1,58 @@
+/* splayTree.css */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#threeTree {
+    width: 100%;
+    display: flex;
+
+}
+
+.app {
+    flex: 1;
+}
+
+.node {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid gray;
+    text-align: center;
+    line-height: 12px;
+    font-size: 12px;
+    margin: 10px;
+    visibility: hidden;
+}
+
+.tree-children {
+    display: flex;
+}
+
+.tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current {
+    border: 1px solid blue;
+}
+
+.v-node {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid gray;
+    background-color: #00ffff;
+    text-align: center;
+    line-height: 12px;
+    font-size: 12px;
+    margin: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.4s ease,
+        background-color 0.6s ease;
+}

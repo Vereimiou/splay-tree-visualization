@@ -1,0 +1,71 @@
+<!-- splayTree.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="splayTree.css">
+    <title>1</title>
+</head>
+
+<body>
+    <div id="threeTree">
+        <div id="left" class="app"></div>
+        <div id="center" class="app"></div>
+        <div id="right" class="app"></div>
+    </div>
+    <div style="
+            width: 100%;
+            bottom: 50px;
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            z-index: 10;">
+        <span>
+            splay操作类型：
+            <select id="kSelector" onchange="changeKValue()">
+                <option value="自顶向下">自顶向下</option>
+                <option value="自底向上">自底向上</option>
+            </select>
+        </span>
+        <span>
+            Delay: <span id="speedDisplay">50</span>ms<input type="range" min="10" max="2000" value="50"
+                id="speedSlider">
+        </span>
+
+
+    </div>
+    <div style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 0%;
+            width: 100%;
+            z-index: 10;
+            ">
+        <div>
+            <label for="inputA">插入：</label>
+            <input type="text" id="inputA">
+            <button id="submitA">确定</button>
+        </div>
+
+        <div>
+            <label for="inputB">删除：</label>
+            <input type="text" id="inputB">
+            <button id="submitB">确定</button>
+        </div>
+
+        <div>
+            <label for="inputC">查找：</label>
+            <input type="text" id="inputC">
+            <button id="submitC">确定</button>
+        </div>
+    </div>
+    <script src="splayTree.js"></script>
+
+</body>
+
+</html>
